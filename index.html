@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <style>
+        body { font-family: sans-serif; max-width: 400px; margin: 50px auto; text-align: center; }
+        #weatherContainer { display: none; border: 1px solid #ccc; padding: 20px; border-radius: 8px; margin-top: 20px; }
+        #errorMessage { color: red; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Weather Search</h1>
+    <input type="text" id="cityField" placeholder="Enter city name (e.g., Mumbai)">
+    <button id="searchBtn">Search</button>
+
+    <div id="errorMessage"></div>
+
+    <div id="weatherContainer">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="condition"></p>
+        <p id="windSpeed"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
